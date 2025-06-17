@@ -6,7 +6,7 @@ def reduce_intensity_levels(img, levels):
     if (levels < 2 or levels > 256):
         raise ValueError("Levels must be between 2 and 256 inclusive.")
 
-    desired_levels = 2 ** i for i in range(1, 9)
+    desired_levels = [2 ** i for i in range(1, 9)]
 
     if levels not in desired_levels:
         raise ValueError("Levels must be one of the following: 2, 4, 8, 16, 32, 64, 128, 256")
