@@ -1,4 +1,6 @@
 import cv2
+import numpy as np
+import os
 
 def reduce_intensity_levels(img, levels):
     if (levels < 2 or levels > 256):
@@ -26,8 +28,12 @@ if __name__ == "__main__":
 
     try:
         output_img = reduce_intensity_levels(img, levels) # applies the division to all pixels at once
-        
-    except:
+        os.makedirs("../results", exist_ok=True)
+        output_filename = f"../results/task1_reduced_intensity_levels_{levels}.jpg"
+        cv2.imwrite(output_filename, output_img)
+    except ValueError as e:
+        print(e)
+
 
 
 
