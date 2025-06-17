@@ -9,3 +9,5 @@ if __name__ == "__main__":
 
     print("Original Image Shape: ", img.shape)
     
+    levels = int(input("Enter the number of intensity levels (2-256, in integer poers of 2): "))
+    
