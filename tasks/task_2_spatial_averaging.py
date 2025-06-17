@@ -16,3 +16,8 @@ if __name__ == "__main__":
     output_filename = f"../results/task2_blur_10x10.jpg"
     cv2.imwrite(filename, blur_10x10)
 
+    blur_20x20 = cv2.blur(img, (20, 20))
+    output_filename = f"../results/task2_blur_20x20.jpg"
+    cv2.imwrite(filename, blur_20x20)
+
+
