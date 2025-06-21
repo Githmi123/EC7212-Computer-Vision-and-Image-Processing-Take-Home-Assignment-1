@@ -1,7 +1,7 @@
 import cv2
 import os
 
-os.makedirs("results", exist_ok=True)
+os.makedirs("../results", exist_ok=True)
 img = cv2.imread("../images/task3.jpg")
 if img is None:
     print("Image not found!")
