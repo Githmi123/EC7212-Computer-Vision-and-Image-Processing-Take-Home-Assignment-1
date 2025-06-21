@@ -24,7 +24,7 @@ if __name__ == "__main__":
 
     print("Original Image Shape: ", img.shape)
     
-    levels = int(input("Enter the number of intensity levels (2-256, in integer poers of 2): "))
+    levels = int(input("Enter the number of intensity levels (2-256, in integer powers of 2): "))
 
     try:
         output_img = reduce_intensity_levels(img, levels) # applies the division to all pixels at once

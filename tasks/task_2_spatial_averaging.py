@@ -2,7 +2,7 @@ import cv2
 import os
 
 os.makedirs("../results", exist_ok=True)
-img = cv2.imread('../images/task2.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('../images/task2.jpg')
 if img is None:
     print("Image not found!")
     exit(1)
@@ -18,5 +18,7 @@ cv2.imwrite(output_filename, blur_10x10)
 blur_20x20 = cv2.blur(img, (20, 20))
 output_filename = f"../results/task2_blur_20x20.jpg"
 cv2.imwrite(output_filename, blur_20x20)
+
+print("Blurred images saved successfully in the 'results' directory.")
 
 
