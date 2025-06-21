@@ -32,7 +32,7 @@ For every 3×3 block of the image (without overlapping), this program replaces a
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/EC7212-Take-Home-Assignment-1.git
+   git clone https://github.com/your-username/EC7212-Take-Home-Assignment-1.git](https://github.com/Githmi123/EC7212-Computer-Vision-and-Image-Processing-Take-Home-Assignment-1.git
    cd EC7212-Take-Home-Assignment-
    
 2. Make sure required libraries are installed:
